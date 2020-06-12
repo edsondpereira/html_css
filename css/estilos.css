@@ -1,0 +1,33 @@
+body {
+    background-image:url(../imagens/fundo.jpg);
+    /*background-size:1200px 1100px;*/
+    background-size:auto 100vh; /* auto mantém a proporção horizontal; vh valor absoluto da tela --> viewport */
+    font-family: arial;
+    height:100vh;
+  }
+  .menu {
+    background-color:white; 
+  }
+  a {
+    text-decoration: none; 
+  }
+  a:hover{ /* pseudo-classe */ 
+     text-decoration: underline;
+  }
+  .menu ul {
+   display:flex; /* Fica em coluna. Se fosse colocado em li, ficaria um abaixo do outro */ 
+    justify-content: space-around; /* espaço entre as palavras (colunas) ou space-between*/
+  }
+  .menu li { /* seletor hieráquico  */
+    list-style: none;
+  }
+  
+  .site-subtitle,
+  .site-title{
+   text-align: center;
+   color:whitesmoke;
+  }
+  
+  .site-subtitle{
+    font-style: italic
+  }
