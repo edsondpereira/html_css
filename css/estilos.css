@@ -1,3 +1,9 @@
+/* reset do css */
+* {
+	margin:0;
+	padding:0;
+	box-sizing: border-box; /* tamanho dos elementos */
+}
 body {
     background-image:url(../imagens/fundo.jpg);
     /*background-size:1200px 1100px;*/
@@ -5,29 +11,47 @@ body {
     font-family: arial;
     height:100vh;
   }
-  .menu {
-    background-color:white; 
-  }
-  a {
-    text-decoration: none; 
-  }
-  a:hover{ /* pseudo-classe */ 
-     text-decoration: underline;
-  }
-  .menu ul {
-   display:flex; /* Fica em coluna. Se fosse colocado em li, ficaria um abaixo do outro */ 
-    justify-content: space-around; /* espaço entre as palavras (colunas) ou space-between*/
-  }
-  .menu li { /* seletor hieráquico  */
-    list-style: none;
-  }
-  
-  .site-subtitle,
-  .site-title{
-   text-align: center;
-   color:whitesmoke;
-  }
-  
-  .site-subtitle{
-    font-style: italic
-  }
+
+header {
+	height:100vh;
+	display:flex; /* Vira coluna */
+	justify-content:center;
+	align-items: center; /* esta e a de cima só funciona por causa do display: flex */
+}
+
+
+
+.menu {
+background-color:white; 
+position:fixed; /* inserido depois do header/display:flex */
+width:100vh; /* idem acima */
+top:0; /* deixa o menu encostado na parte superior */
+}
+a {
+text-decoration: none; 
+}
+a:hover{ /* pseudo-classe */ 
+ text-decoration: underline;
+}
+.menu ul {
+display:flex; /* Fica em coluna. Se fosse colocado em li, ficaria um abaixo do outro */ 
+justify-content: space-around; /* espaço entre as palavras (colunas) ou space-between*/
+}
+.menu li { /* seletor hieráquico  */
+list-style: none;
+}
+
+.site-subtitle,
+.site-title{
+text-align: center;
+color:whitesmoke;
+}
+
+.site-subtitle{
+font-style: italic
+}
+
+.img-portfolio {
+	width:278px;
+	height:162px;
+}
