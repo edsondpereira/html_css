@@ -10,7 +10,7 @@ body {
     background-size:auto 100vh; /* auto mantém a proporção horizontal; vh valor absoluto da tela --> viewport */
     font-family: 'Source Code Pro', monospace;
     height:100vh;
-	font-size:12px;
+	font-size:10px;
   }
 
 /* Se a tela tiver pelo menos 400px vai carregar estes estilos */
@@ -88,32 +88,8 @@ color:whitesmoke;
 	line-height: 1.7em;
 }
 
-.portfolio .grid { /* Seletor hiearárquico */
-    display:grid; /* flex */
-	gap: 2em; /* Define o espaçamento entre cada coluna ou linha do grid. Isso acontece com o display:grid é declarado */
-	/* grid-template-columns: 240px 500px 300px; */
-	/*  grid-template-columns: 240px 240px; --> foi retirado depois que foi criado o @media */
-}
-
-@media (min-width: 560px) {
-	.portfolio .grid { 
-	grid-template-columns: 240px 240px;
-	}
-}
-
-@media (min-width: 880px) {
-	.portfolio .grid { 
-	grid-template-columns: repeat(3, 260px); /* 240px 240px 240px; */
-	justify-content: center; /* somente quando for grid  */
-	align-items: center;
-	}
-}
-
-/* parei 44min */
-
 .portfolio {
-	text-align: center; /* somente as figuras */
-	height: 100vh;
+    padding: 2em;
 }
 
 .portfolio h2 {
@@ -122,17 +98,7 @@ color:whitesmoke;
 	margin-bottom: 1.5em;
 }
 
-.img-portfolio {	
-	width:162px;
+.img-portfolio {
+	width:278px;
 	height:162px;
-	object-fit: cover; /* contain - deixa as imagens com seus respectivos tamanho - cover todas ficam com o mesmo tamanho */
-	object-position: left bottom;
-	border-radius: 10%; /* arredondamento  */
-}
-
-@media (min-width: 1200px) {
-	.img-portfolio {
-	width:auto;
-	height:10em; /* 10 vezes o tamanho da fonte 12 por exemplo  */
-}
 }
